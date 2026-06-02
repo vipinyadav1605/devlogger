@@ -2,27 +2,28 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
-const Sidebar=()=> {
+const Sidebar = () => {
   const location = useLocation();
 
   const menuItems = [
-    { path: '/dashboard', icon: '', label: 'Dashboard' },
-    { path: '/journal', icon: '', label: 'Journal' },
-    { path: '/projects', icon: '', label: 'Projects' },
-    { path: '/skills', icon: '', label: 'Skills' },
-    { path: '/resources', icon: '', label: 'Resources' },
-    { path: '/snippets', icon: '', label: 'Code Snippets' },
-    { path: '/goals', icon: '', label: 'Goals' },
-    { path: '/activities', icon: '', label: 'Activities' },
-     { path: '/github', icon: '', label: 'GitHub' }, 
-    { path: '/profile', icon: '', label: 'Profile' },
+    { path: '/dashboard', label: 'Dashboard' },
+    { path: '/journal', label: 'Journal' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/skills', label: 'Skills' },
+    { path: '/resources', label: 'Resources' },
+    { path: '/snippets', label: 'Code Snippets' },
+    { path: '/goals', label: 'Goals' },
+    { path: '/activities', label: 'Activities' },
+    { path: '/github', label: 'GitHub' },
+    { path: '/profile', label: 'Profile' },
   ];
 
   return (
     <div className="sidebar sticky-top">
-      <div className="p-4">
-        <h3 className="text-white fw-bold mb-4">
-          <span style={{ fontSize: '1.5rem' }}></span> DevLogger
+      <div className="sidebar-inner">
+        <h3 className="sidebar-brand">
+          <span className="brand-mark">DL</span>
+          DevLogger
         </h3>
         <Nav className="flex-column">
           {menuItems.map((item) => (
@@ -32,7 +33,6 @@ const Sidebar=()=> {
               to={item.path}
               className={location.pathname === item.path ? 'active' : ''}
             >
-              <span className="me-2" style={{ fontSize: '1.2rem' }}>{item.icon}</span>
               {item.label}
             </Nav.Link>
           ))}
@@ -40,6 +40,6 @@ const Sidebar=()=> {
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;

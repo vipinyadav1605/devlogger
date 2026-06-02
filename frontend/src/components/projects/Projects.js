@@ -324,7 +324,7 @@ function Projects() {
               <Form.Check
                 type="checkbox"
                 name="is_featured"
-                label="⭐ Mark as featured project"
+                label="Mark as featured project"
                 checked={formData.is_featured}
                 onChange={handleChange}
               />

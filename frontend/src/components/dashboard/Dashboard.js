@@ -36,10 +36,10 @@ function Dashboard() {
   }
 
   const statCards = [
-    { title: 'Total Hours', value: stats?.total_coding_hours || 0, icon: '', color: '#667eea' },
-    { title: 'Projects', value: stats?.total_projects || 0, icon: '', color: '#764ba2' },
-    { title: 'Skills', value: stats?.total_skills || 0, icon: '', color: '#f093fb' },
-    { title: 'Current Streak', value: `${stats?.current_streak || 0} days`, icon: '', color: '#4facfe' },
+    { title: 'Total Hours', value: stats?.total_coding_hours || 0 },
+    { title: 'Projects', value: stats?.total_projects || 0 },
+    { title: 'Skills', value: stats?.total_skills || 0 },
+    { title: 'Current Streak', value: `${stats?.current_streak || 0} days` },
   ];
 
   return (
@@ -49,7 +49,7 @@ function Dashboard() {
       <Row className="g-4 mb-4">
         {statCards.map((card, index) => (
           <Col key={index} lg={3} md={6}>
-            <Card className="stat-card h-100" style={{ background: `linear-gradient(135deg, ${card.color} 0%, ${card.color}dd 100%)` }}>
+            <Card className="stat-card h-100">
               <Card.Body>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
@@ -57,9 +57,6 @@ function Dashboard() {
                       {card.title}
                     </p>
                     <h3 className="mb-0 fw-bold">{card.value}</h3>
-                  </div>
-                  <div style={{ fontSize: '3rem', opacity: 0.8 }}>
-                    {card.icon}
                   </div>
                 </div>
               </Card.Body>

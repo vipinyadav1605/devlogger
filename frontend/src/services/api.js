@@ -57,81 +57,81 @@ api.interceptors.response.use(
 
 // Auth APIs
 export const authAPI = {
-  login: (credentials) => api.post('/auth/login/', credentials),
-  register: (userData) => api.post('/auth/register/', userData),
-  getCurrentUser: () => api.get('/auth/user/'),
+  login: (credentials) => api.post('api/auth/login/', credentials),
+  register: (userData) => api.post('api/auth/register/', userData),
+  getCurrentUser: () => api.get('api/auth/user/'),
 };
 
 // Dashboard APIs
 export const dashboardAPI = {
-  getStats: () => api.get('/dashboard/stats/'),
+  getStats: () => api.get('api/dashboard/stats/'),
 };
 
 // Profile APIs
 export const profileAPI = {
-  getProfile: () => api.get('/profiles/me/'),
-  updateProfile: (data) => api.put('/profiles/update_me/', data),
+  getProfile: () => api.get('api/profiles/me/'),
+  updateProfile: (data) => api.put('api/profiles/update_me/', data),
 };
 
 // Skills APIs
 export const skillsAPI = {
-  getAll: (params) => api.get('/skills/', { params }),
-  create: (data) => api.post('/skills/', data),
-  update: (id, data) => api.put(`/skills/${id}/`, data),
-  delete: (id) => api.delete(`/skills/${id}/`),
+  getAll: (params) => api.get('api/skills/', { params }),
+  create: (data) => api.post('api/skills/', data),
+  update: (id, data) => api.put(`api/skills/${id}/`, data),
+  delete: (id) => api.delete(`api/skills/${id}/`),
 };
 
 // Journal APIs
 export const journalAPI = {
-  getAll: (params) => api.get('/journal/', { params }),
-  create: (data) => api.post('/journal/', data),
-  update: (id, data) => api.put(`/journal/${id}/`, data),
-  delete: (id) => api.delete(`/journal/${id}/`),
-  getById: (id) => api.get(`/journal/${id}/`),
+  getAll: (params) => api.get('api/journal/', { params }),
+  create: (data) => api.post('api/journal/', data),
+  update: (id, data) => api.put(`api/journal/${id}/`, data),
+  delete: (id) => api.delete(`api/journal/${id}/`),
+  getById: (id) => api.get(`api/journal/${id}/`),
 };
 
 // Projects APIs
 export const projectsAPI = {
-  getAll: (params) => api.get('/projects/', { params }),
-  create: (data) => api.post('/projects/', data),
-  update: (id, data) => api.put(`/projects/${id}/`, data),
-  delete: (id) => api.delete(`/projects/${id}/`),
-  getById: (id) => api.get(`/projects/${id}/`),
+  getAll: (params) => api.get('api/projects/', { params }),
+  create: (data) => api.post('api/projects/', data),
+  update: (id, data) => api.put(`api/projects/${id}/`, data),
+  delete: (id) => api.delete(`api/projects/${id}/`),
+  getById: (id) => api.get(`api/projects/${id}/`),
 };
 
 // Resources APIs
 export const resourcesAPI = {
-  getAll: (params) => api.get('/resources/', { params }),
-  create: (data) => api.post('/resources/', data),
-  update: (id, data) => api.put(`/resources/${id}/`, data),
-  delete: (id) => api.delete(`/resources/${id}/`),
+  getAll: (params) => api.get('api/resources/', { params }),
+  create: (data) => api.post('api/resources/', data),
+  update: (id, data) => api.put(`api/resources/${id}/`, data),
+  delete: (id) => api.delete(`api/resources/${id}/`),
 };
 
 // Snippets APIs
 export const snippetsAPI = {
-  getAll: (params) => api.get('/snippets/', { params }),
-  create: (data) => api.post('/snippets/', data),
-  update: (id, data) => api.put(`/snippets/${id}/`, data),
-  delete: (id) => api.delete(`/snippets/${id}/`),
-  getById: (id) => api.get(`/snippets/${id}/`),
+  getAll: (params) => api.get('api/snippets/', { params }),
+  create: (data) => api.post('api/snippets/', data),
+  update: (id, data) => api.put(`api/snippets/${id}/`, data),
+  delete: (id) => api.delete(`api/snippets/${id}/`),
+  getById: (id) => api.get(`api/snippets/${id}/`),
 };
 
 // Goals APIs
 export const goalsAPI = {
-  getAll: (params) => api.get('/goals/', { params }),
-  create: (data) => api.post('/goals/', data),
-  update: (id, data) => api.put(`/goals/${id}/`, data),
-  delete: (id) => api.delete(`/goals/${id}/`),
+  getAll: (params) => api.get('api/goals/', { params }),
+  create: (data) => api.post('api/goals/', data),
+  update: (id, data) => api.put(`api/goals/${id}/`, data),
+  delete: (id) => api.delete(`api/goals/${id}/`),
 };
 
 // Activities APIs
 export const activitiesAPI = {
-  getAll: (params) => api.get('/activities/', { params }),
-  create: (data) => api.post('/activities/', data),
-  update: (id, data) => api.put(`/activities/${id}/`, data),
-  delete: (id) => api.delete(`/activities/${id}/`),
-  getWeeklyStats: () => api.get('/activities/weekly_stats/'),
-  getMonthlyStats: () => api.get('/activities/monthly_stats/'),
+  getAll: (params) => api.get('api/activities/', { params }),
+  create: (data) => api.post('api/activities/', data),
+  update: (id, data) => api.put(`api/activities/${id}/`, data),
+  delete: (id) => api.delete(`api/activities/${id}/`),
+  getWeeklyStats: () => api.get('api/activities/weekly_stats/'),
+  getMonthlyStats: () => api.get('api/activities/monthly_stats/'),
 };
 
 export default api;
@@ -140,10 +140,10 @@ export default api;
 
 // GitHub APIs
 export const githubAPI = {
-  syncGitHub: () => api.post('/github/sync/'),
-  getStats: () => api.get('/github/stats/'),
-  getContributionGraph: (days = 365) => api.get('/github/graph/', { params: { days } }),
-  getRepos: (params) => api.get('/github/repos/', { params }),
-  getCommits: (params) => api.get('/github/commits/', { params }),
-  getContributions: (params) => api.get('/github/contributions/', { params }),
+  syncGitHub: () => api.post('api/github/sync/'),
+  getStats: () => api.get('api/github/stats/'),
+  getContributionGraph: (days = 365) => api.get('api/github/graph/', { params: { days } }),
+  getRepos: (params) => api.get('api/github/repos/', { params }),
+  getCommits: (params) => api.get('api/github/commits/', { params }),
+  getContributions: (params) => api.get('api/github/contributions/', { params }),
 };

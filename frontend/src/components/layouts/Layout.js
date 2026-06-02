@@ -6,20 +6,20 @@ import Header from './Header';
 
 const Layout=({ onLogout }) =>{
   return (
-    <Container fluid>
-      <Row>
-        <Col md={2} className="p-0">
+    <Container fluid className="app-shell">
+      <Row className="g-0">
+        <Col md={3} lg={2} className="p-0">
           <Sidebar />
         </Col>
-        <Col md={10} className="p-0">
+        <Col md={9} lg={10} className="p-0 app-main">
           <Header onLogout={onLogout} />
-          <div className="p-4">
+          <main className="page-content">
             <Outlet />
-          </div>
+          </main>
         </Col>
       </Row>
     </Container>
   );
-}
+};
 
 export default Layout;

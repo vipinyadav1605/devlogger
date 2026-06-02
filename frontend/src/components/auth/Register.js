@@ -51,22 +51,16 @@ function Register({ onLogin }) {
   };
 
   return (
-    <Container fluid className="min-vh-100 d-flex align-items-center justify-content-center py-5" 
-      style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+    <Container fluid className="auth-screen min-vh-100 d-flex align-items-center justify-content-center py-5">
       <Row className="w-100 justify-content-center">
         <Col md={8} lg={6}>
-          <Card className="shadow-lg border-0">
+          <Card className="auth-card">
             <Card.Body className="p-5">
               <div className="text-center mb-4">
-                <h1 className="fw-bold" style={{ 
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
-                }}>
+                <h1 className="auth-brand fw-bold">
                   DevLogger
                 </h1>
-                <p className="text-muted">Create your account and start tracking your coding journey!</p>
+                <p className="text-muted">Create an account to keep your work organized.</p>
               </div>
 
               {error && <Alert variant="danger">{error}</Alert>}

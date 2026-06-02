@@ -78,7 +78,7 @@ function Profile() {
 
   return (
     <div>
-      <h2 className="fw-bold mb-4">👤 Profile</h2>
+      <h2 className="fw-bold mb-4"> Profile</h2>
 
       {success && (
         <Alert variant="success" dismissible onClose={() => setSuccess(false)}>

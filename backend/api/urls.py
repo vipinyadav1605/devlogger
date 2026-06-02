@@ -16,7 +16,6 @@ router.register(r'github/repos', views.GitHubRepositoryViewSet, basename='github
 router.register(r'github/commits', views.GitHubCommitViewSet, basename='github-commit')
 router.register(r'github/contributions', views.GitHubContributionViewSet, basename='github-contribution')
 urlpatterns = [
-
     path('auth/register/', views.register, name='register'),
     path('auth/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('auth/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

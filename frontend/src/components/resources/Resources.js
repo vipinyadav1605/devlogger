@@ -225,7 +225,7 @@ function Resources() {
                     className="p-0"
                     onClick={() => toggleFavorite(resource)}
                   >
-                    {resource.is_favorite ? '⭐' : '☆'}
+                    {resource.is_favorite ? 'Remove favorite' : 'Add favorite'}
                   </Button>
                 </div>
 

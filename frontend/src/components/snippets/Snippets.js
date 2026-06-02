@@ -149,7 +149,7 @@ function Snippets() {
   return (
     <div>
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="fw-bold mb-0">💻 Code Snippets</h2>
+        <h2 className="fw-bold mb-0">Code Snippets</h2>
         <Button variant="primary" onClick={() => handleShowModal()}>
           + New Snippet
         </Button>
@@ -171,7 +171,7 @@ function Snippets() {
                     className="p-0"
                     onClick={() => toggleFavorite(snippet)}
                   >
-                    {snippet.is_favorite ? "⭐" : "☆"}
+                    {snippet.is_favorite ? 'Remove favorite' : 'Add favorite'}
                   </Button>
                 </div>
 
