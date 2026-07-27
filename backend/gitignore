@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# SQLite
+db.sqlite3
+
+# Environment variables
+.env
+
+# Static files
+staticfiles/
+
+# Media uploads
+media/
+
+# Logs
+*.log
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Migrations (optional)
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
