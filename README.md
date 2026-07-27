@@ -4,14 +4,14 @@ A full-stack web application built with Django REST Framework and React that hel
 
 ## Features
 
-- 📊 **Dashboard** - Overview of your coding statistics and recent activities
-- 📝 **Journal** - Daily coding journal with markdown support
-- 🚀 **Projects** - Manage and showcase your development projects
-- 💡 **Skills** - Track your technical skills and proficiency levels
-- 📚 **Resources** - Organize learning materials and bookmarks
-- 💻 **Code Snippets** - Save and manage reusable code snippets
-- 🎯 **Goals** - Set and track your learning goals
-- 📈 **Activities** - Log daily coding hours, commits, and productivity
+-  **Dashboard** - Overview of your coding statistics and recent activities
+-  **Journal** - Daily coding journal with markdown support
+-  **Projects** - Manage and showcase your development projects
+-  **Skills** - Track your technical skills and proficiency levels
+-  **Resources** - Organize learning materials and bookmarks
+-  **Code Snippets** - Save and manage reusable code snippets
+-  **Goals** - Set and track your learning goals
+-  **Activities** - Log daily coding hours, commits, and productivity
 
 ## Tech Stack
 
@@ -114,3 +114,46 @@ Frontend will run on `http://localhost:3000`
 - `/api/activities/` - Coding activities CRUD
 
 ## Project Structure
+
+
+
+
+
+# DevLogger
+
+A full-stack developer logging platform built with Django REST Framework and React.
+
+## Features
+
+- JWT Authentication
+- REST APIs
+- User Profiles
+- Dashboard
+- CRUD Operations
+
+## Tech Stack
+
+Backend
+- Django
+- DRF
+- PostgreSQL
+
+Frontend
+- React
+- Bootstrap
+
+Deployment
+- Docker
+- Render
+
+## Live Demo
+
+Frontend:
+https://your-frontend.onrender.com
+
+Backend:
+https://your-backend.onrender.com
+
+## Run Locally
+
+docker compose up --build
