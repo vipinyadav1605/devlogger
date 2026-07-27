@@ -115,14 +115,6 @@ Frontend will run on `http://localhost:3000`
 
 ## Project Structure
 
-
-
-
-
-# DevLogger
-
-A full-stack developer logging platform built with Django REST Framework and React.
-
 ## Features
 
 - JWT Authentication
