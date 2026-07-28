@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Button, Alert, Spinner, Badge, ProgressBar } from 'react-bootstrap';
+import { Row, Col, Card, Button, Alert, Spinner} from 'react-bootstrap';
 import { githubAPI } from '../../services/api';
 import ContributionGraph from './ContributionGraph';
 import RepositoryList from './RepositoryList';
